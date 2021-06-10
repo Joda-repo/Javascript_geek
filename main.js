@@ -117,7 +117,6 @@ const productBasket = {
     render() {
         this.basketGoodsBlock.innerHTML = ''
         if (this.products.length) {
-
             this.products.forEach(product => {
                 this.basketGoodsBlock.insertAdjacentHTML('beforeend', this.basketItem.render(product))});
             this.basketInfBlock.textContent = `В корзине: ${this.countBasketProduct()} товара(ов) на сумму ${this.countBasketPrice()} рубля(ей)`
